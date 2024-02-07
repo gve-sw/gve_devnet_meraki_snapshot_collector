@@ -81,7 +81,11 @@ Alternatively, the [Meraki Always-On](https://devnetsandbox.cisco.com/DevNet/cat
 
 ### Sample script run
 
-![demo.gif](demo.gif)
+![demo.gif](images/demo.gif)
+
+### Sample HTML report
+
+![html-report.png](images/html-report.png)
 
 ### LICENSE
 
