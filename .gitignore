@@ -1,0 +1,5 @@
+.env
+index.html
+snapshots/
+Taskfile.yaml
+demo.tape

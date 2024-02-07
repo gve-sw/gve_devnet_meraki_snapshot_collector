@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html id="styleguide" class="" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Meraki Snapshot Collector</title>
+
+
+    <link rel="stylesheet" href="/static/css/cui-standard.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/static/css/customStyles.css">
+</head>
+
+<body class="cui">
+    <nav class="header" id="styleguideheader" role="navigation">
+        <div class="container-fluid">
+            <div class="header-panels">
+                <div class="header-panel">
+                    <a class="header-bar__logo header__logo" href="https://gve-devnet.cisco.com/" target="_blank">
+                        <span id="header-logo" class="icon-cisco"></span>
+                    </a>
+                    <h1 class="header__title">Meraki Snapshot Collector</h1>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="content content--alt">
+        <br />
+        <div class="container-fluid">
+            <div class="flex flex-row flex-wrap gap-6 justify-center">
+
+                {% for camera in cameras %}
+                <div class="w-1/4 bg-neutral text-neutral-content shadow-xl ">
+                    <img src="/{{path}}/{{camera}}.jpg"></img>
+                    <p class="text-center">{{ cameras[camera]["name"] }}</p>
+                </div>
+                {% endfor %}
+
+            </div>
+        </div>
+
+</body>
+
+</html>
