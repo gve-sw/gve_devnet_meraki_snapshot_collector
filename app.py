@@ -232,7 +232,7 @@ def cli(
     print()
     print(Panel.fit("Connect to Meraki", title="Step 1"))
     dashboard = meraki.DashboardAPI(
-        suppress_logging=True, caller="MVSnapshotCollector CiscoGVEDevNet"
+        apikey, suppress_logging=True, caller="MVSnapshotCollector CiscoGVEDevNet"
     )
     org_id = getOrgs(dashboard)
 
